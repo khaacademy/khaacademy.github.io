@@ -27,3 +27,7 @@ tr:nth-child(even) {
 .omegachad {
 	text-decoration: line-through;
 }
+
+.shadow {
+  text-shadow: 2px 2px 4px #94424246;
+}
