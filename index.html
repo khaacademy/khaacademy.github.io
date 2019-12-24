@@ -6,18 +6,17 @@
 <title>Kha Academy</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="default.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;}
-.w3-bar,h1,button {font-family: Arial, Helvetica, sans-serif;}
-.fa-anchor,.fa-coffee {font-size:200px}
-.w3-white,.w3-hover-white:hover{color:#7d1919!important;background-color:#fffbfb!important}
-.cool-cool:hover{color:#7d1919!important;background-color:#d1b5b5!important}
-.chad{color:#7d1919!important}
-.chad:hover{color:#ac6c6c!important}
+  body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;}
+  .w3-bar,h1,button {font-family: Arial, Helvetica, sans-serif;}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  .w3-white,.w3-hover-white:hover{color:#7d1919!important;background-color:#fffbfb!important}
+  .cool-cool:hover{color:#7d1919!important;background-color:#d1b5b5!important}
+  .chad{color:#7d1919!important}
+  .chad:hover{color:#ac6c6c!important}
 </style>
 <body>
 
@@ -44,32 +43,100 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;}
 
 <!-- Header -->
 <header class="w3-container w3-pale-red w3-center" style="padding:64px 0px 16px 0px">
-	<a href="index.html"><img class="w3-margin w3-jumbo w3-hide-large w3-hide-medium" style="width: 90%" src="images/khaAcademyLogo.png" /></a>
-	<a href="index.html"><img class="w3-margin w3-jumbo w3-hide-small" style="width: 35%" src="images/khaAcademyLogo.png" /></a>
+	<a href="index.html"><img class="w3-margin w3-jumbo w3-hide-large w3-hide-medium" style="width: 90%" src="images/khaAcademyLogoChristmas.png" /></a>
+	<a href="index.html"><img class="w3-margin w3-jumbo w3-hide-small" style="width: 35%" src="images/khaAcademyLogoChristmas.png" /></a>
 </header>
+
+<!-- Snow -->
+<div class="snow" />
+		<style>
+		.editor-stage .snow {
+		  height:50px;
+		  background: #fff;
+		}
+		.snow{
+		  position:fixed;
+		  pointer-events:none;
+		  top:0;
+		  left:0;
+		  right:0;
+		  bottom:0;
+		  height:100vh;
+		  background: none;
+		  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+		  z-index:100;
+		  -webkit-animation: snow 10s linear infinite;
+		  -moz-animation: snow 10s linear infinite;
+		  -ms-animation: snow 10s linear infinite;
+		  animation: snow 10s linear infinite;
+		}
+		@keyframes snow {
+		  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+		  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+		  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+		}
+		@-moz-keyframes snow {
+		  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+		  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+		  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+		}
+		@-webkit-keyframes snow {
+		  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+		  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+		  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+		}
+		@-ms-keyframes snow {
+		  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+		  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+		  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+		}
+		</style>
+	</div>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-32 w3-container">
   <div class="w3-content">
     <h1>Welcome!</h1>
       <hr/>
-      <h5 class="w3-text-grey"><a class="w3-text-cyan chad shadow" href="practice.html">Practice Tests</a> - Recommended! Warm up with official tests from previous tournaments!</h5>
+      <h5 class="w3-text-grey"><a class="chad shadow" href="practice.html">Practice Tests</a> - Recommended! Warm up with official tests from previous tournaments!</h5>
       <hr/>
       <h5 class="w3-text-grey"><a class="w3-text-cyan chad" href="dates.html">Dates</a> - Your very own tournament calendar!</h5>
       <hr/>
 			<h5 class="w3-text-grey"><a class="w3-text-cyan chad" href="resources.html">Resources</a> - Other helpful sites, cheat sheets, last-minute tips, and more!</h5>
       <hr/>
       <br/>
-      <h3>Announcement (11/26/19):</h3>
+      <h3>Announcement (12/24/19):</h3>
       <hr/>
-      <p>Outstanding work at the Benjamin Franklin tournament!</p>
-      <p>Haynes has swept once again!</p>
-      <p>I congratulate everyone who went to the tournament.</p>
-      <p>Extra thanks to those who sent me tests! We need the future generations of Haynes to keep up the good work!</p>
-      <p>I have uploaded the new tests I've received. </p>
-      <p>● added Benjamin Franklin Pre-Calculus Individual 2019</p>
-      <p>● added Benjamin Franklin Pre-Calculus Team 2019</p>
-      <p>● added Benjamin Franklin Mu A Individual 2019</p>
+      <span style="color:#e31010;">M</span><span style="color:#ab3a0f;">e</span><span style="color:#74630e;">r</span><span style="color:#3c8d0d;">r</span><span style="color:#64ad1f;">y</span><span style="color:#8ccc31;"> </span><span style="color:#a3cc33;">C</span><span style="color:#b9cc36;">h</span><span style="color:#d0cc38;">r</span><span style="color:#aecc35;">i</span><span style="color:#8ccc31;">s</span><span style="color:#71b725;">t</span><span style="color:#57a219;">m</span><span style="color:#3c8d0d;">a</span><span style="color:#904f0f;">s</span><span style="color:#e31010;">!</span>
+      <p>I hope the Fall semester went well for you all!</p>
+      <p>Enjoy your break, but make sure to prepare for your next semester as well!</p>
+      <p>Next tournament coming up is the Catholic High tournament on January 25th, 2020.</p>
+      <p>Along with that, I am releasing a huge update! There will be more non-calculus content, so those in Alpha or Theta level can practice too!</p>
+      <p>Contents included are listed below:</p>
+      <p><em>● typesetted St. Paul's Calculus AB Team 2018</em></p>
+      <p><em>● typesetted St. Paul's Interschool 2018 and added Answers</em></p>
+      <p><em>● added St. Paul's Middle Individual 2018</em></p>
+      <p><em>● added St. Paul's Pre-Algebra Individual 2018</em></p>
+      <p><em>● added St. Paul's Algebra I Individual 2018</em></p>
+      <p><em>● added St. Paul's Geometry Individual 2018</em></p>
+      <p><em>● added St. Paul's Algebra II Individual 2018</em></p>
+      <p><em>● added St. Paul's Advanced Mathematics Individual 2018</em></p>
+      <p><em>● added St. Paul's Trigonometry Individual 2017</em></p>
+      <p><em>● typesetted Catholic High Calculus AB Individual 2018</em></p>
+      <p><em>● typesetted Catholic High Calculus AB Individual 2019</em></p>
+      <p><em>● typesetted Catholic High Calculus BC Individual 2019</em></p>
+      <p><em>● typesetted Brother Martin Calculus AB Individual 2018</em></p>
+      <p><em>● typesetted Brother Martin Calculus BC Individual 2019</em></p>
+      <p><em>● cleaned up State Mu A Individual 2018</em></p>
+      <p><em>● typesetted State Mu B Individual 2012</em></p>
+      <p><em>● typesetted State Integration Area Test 2010</em></p>
+      <p><em>● cleaned website colors and design (easier on the eyes)</em></p>
+      <p><em>● added columns for typesetted tests and raw tests for Practice Tests</em></p>
+      <p><em>● added raw tests for all relevant Practice Tests</em></p>
+      <p><em>● adjusted About page (with a new FAQ section)</em></p>
+      <p><em>● fixed various minor errors on the website</em></p>
+      <p><em>● added temporary Christmas Theme</em></p>
+
       <hr/>
       <p><i><a href="changelog.html">Click here to view previous announcements...</a></i></p>
   </div>
@@ -81,11 +148,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;}
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-center w3-opacity">  
+<footer class="w3-container w3-padding-32 w3-center">
  <p>Kha Le | Contact: <a href="mailto:khale282819@gmail.com?Subject=Sweep%20Sweep" target="_top">khale282819@gmail.com</a></p>
 </footer>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {

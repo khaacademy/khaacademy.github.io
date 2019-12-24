@@ -6,18 +6,17 @@
 <title>Kha Academy</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="default.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;}
-.w3-bar,h1,button {font-family: Arial, Helvetica, sans-serif;}
-.fa-anchor,.fa-coffee {font-size:200px}
-.w3-white,.w3-hover-white:hover{color:#7d1919!important;background-color:#fffbfb!important}
-.cool-cool:hover{color:#7d1919!important;background-color:#d1b5b5!important}
-.chad{color:#7d1919!important}
-.chad:hover{color:#ac6c6c!important}
+  body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;}
+  .w3-bar,h1,button {font-family: Arial, Helvetica, sans-serif;}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  .w3-white,.w3-hover-white:hover{color:#7d1919!important;background-color:#fffbfb!important}
+  .cool-cool:hover{color:#7d1919!important;background-color:#d1b5b5!important}
+  .chad{color:#7d1919!important}
+  .chad:hover{color:#ac6c6c!important}
 </style>
 <body>
 
@@ -44,9 +43,55 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;}
 
 <!-- Header -->
 <header class="w3-container w3-pale-red w3-center" style="padding:64px 0px 16px 0px">
-	<a href="index.html"><img class="w3-margin w3-jumbo w3-hide-large w3-hide-medium" style="width: 90%" src="images/khaAcademyLogo.png" /></a>
-	<a href="index.html"><img class="w3-margin w3-jumbo w3-hide-small" style="width: 35%" src="images/khaAcademyLogo.png" /></a>
+	<a href="index.html"><img class="w3-margin w3-jumbo w3-hide-large w3-hide-medium" style="width: 90%" src="images/khaAcademyLogoChristmas.png" /></a>
+	<a href="index.html"><img class="w3-margin w3-jumbo w3-hide-small" style="width: 35%" src="images/khaAcademyLogoChristmas.png" /></a>
 </header>
+
+<!-- Snow -->
+<div class="snow" />
+		<style>
+		.editor-stage .snow {
+		  height:50px;
+		  background: #fff;
+		}
+		.snow{
+		  position:fixed;
+		  pointer-events:none;
+		  top:0;
+		  left:0;
+		  right:0;
+		  bottom:0;
+		  height:100vh;
+		  background: none;
+		  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+		  z-index:100;
+		  -webkit-animation: snow 10s linear infinite;
+		  -moz-animation: snow 10s linear infinite;
+		  -ms-animation: snow 10s linear infinite;
+		  animation: snow 10s linear infinite;
+		}
+		@keyframes snow {
+		  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+		  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+		  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+		}
+		@-moz-keyframes snow {
+		  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+		  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+		  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+		}
+		@-webkit-keyframes snow {
+		  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+		  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+		  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+		}
+		@-ms-keyframes snow {
+		  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+		  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+		  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+		}
+		</style>
+	</div>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-32 w3-container">
@@ -54,239 +99,297 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;}
       <h1>Practice Tests</h1>
       <hr/>
       <br/>
-        <h5>  <img src="images/saint_pauls_logo.png" alt="Saint Paul's Logo" height="90"></h5>
+        <h5>  <img src="images/saint_pauls_logo.png" alt="Saint Paul's Logo" title="Saint Paul's" height="90"></h5>
         <table>
             <tr>
-              <th>\(\mathbf{\text{Subject Area}}\)</th>
-              <th>\(\mathbf{\text{Test}}\)</th>
+              <th class="chad">Subject Area</th>
+              <th class="chad">Typeset</th>
+              <th class="chad">Raws</th>
             </tr>
             <tr>
-              <td>Calc AB Individual 2018</td>
-              <td><a class="chad" href="tests/st_pauls.pdf" target="_blank">Download</a></td>
+              <td>Calculus Individual 2018</td>
+              <td><a class="chad" href="tests/typeset/SPS_CAL_IND_18.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/SPS_CAL_IND_18_RAW.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc AB Team 2018</td>
-              <td><a class="chad" href="tests/st_pauls_team.pdf" target="_blank">Download</a></td>
+              <td>Calculus Team 2018</td>
+              <td><a class="chad" href="tests/typeset/SPS_CAL_TEA_18.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/SPS_CAL_TEA_18_RAW.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Interschool 2018</td>
-              <td><a class="chad" href="tests/st_pauls_interschool.pdf" target="_blank">Download</a> \(\small{\text{(Missing Solutions)}}\)</td>
+              <td><a class="chad" href="tests/typeset/SPS_INT_18.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/SPS_INT_18_RAW.pdf" target="_blank">Download</a></td>
+            </tr>
+            <tr>
+              <td>Middle Individual 2018</td>
+              <td><a class="chad" href="tests/typeset/SPS_MID_IND_18.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/SPS_MID_IND_18_RAW.pdf" target="_blank">Download</a></td>
+            </tr>
+            <tr>
+              <td>Pre-Algebra Individual 2018</td>
+              <td><a class="chad" href="tests/typeset/SPS_PRALG_IND_18.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/SPS_PRALG_IND_18_RAW.pdf" target="_blank">Download</a></td>
+            </tr>
+            <tr>
+              <td>Algebra I Individual 2018</td>
+              <td><a class="chad" href="tests/typeset/SPS_ALGI_IND_18.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/SPS_ALGI_IND_18_RAW.pdf" target="_blank">Download</a></td>
+            </tr>
+            <tr>
+              <td>Geometry Individual 2018</td>
+              <td><a class="chad" href="tests/typeset/SPS_GEO_IND_18.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/SPS_GEO_IND_18_RAW.pdf" target="_blank">Download</a></td>
+            </tr>
+            <tr>
+              <td>Algebra II Individual 2018</td>
+              <td><a class="chad" href="tests/typeset/SPS_ALGII_IND_18.pdf" target="_blank">Download</a><sup>&dagger;</sup></td>
+              <td><a class="chad" href="tests/raw/SPS_ALGII_IND_18_RAW.pdf" target="_blank">Download</a></td>
+            </tr>
+            <tr>
+              <td>Advanced Mathematics Individual 2018</td>
+              <td><a class="chad" href="tests/typeset/SPS_ADMAT_IND_18.pdf" target="_blank">Download</a><sup>&dagger;</sup></td>
+              <td><a class="chad" href="tests/raw/SPS_ADMAT_IND_18_RAW.pdf" target="_blank">Download</a></td>
+            </tr>
+            <tr>
+              <td>Trigonometry Individual 2017</td>
+              <td><a class="chad" href="tests/typeset/SPS_TRIG_IND_17.pdf" target="_blank">Download</a><sup>&dagger;</sup></td>
+              <td><a class="chad" href="tests/raw/SPS_TRIG_IND_17_RAW.pdf" target="_blank">Download</a></td>
             </tr>
           </table>
           
           <br />
           <br />
 
-          <h5>  <img src="images/benjamin_franklin_logo.png" alt="Benjamin Franklin Logo" height="50"></h5>
+          <h5>  <img src="images/benjamin_franklin_logo.png" alt="Benjamin Franklin Logo" title="Benjamin Franklin" height="50"></h5>
         <table>
-            <tr>
-              <th>\(\mathbf{\text{Subject Area}}\)</th>
-              <th>\(\mathbf{\text{Test}}\)</th>
-            </tr>
-            <tr>
-              <td>Pre-Calc Individual 2019</td>
-              <td><a class="chad" href="tests/PreCalc_Individual_2019_benjfrank.pdf" target="_blank">Download</a></td>
-            </tr>
-            <tr>
-              <td>Pre-Calc Team 2019</td>
-              <td><a class="chad" href="tests/PreCalc_Team_Test_2019_benjfrank.pdf" target="_blank">Download</a></td>
-            </tr>
-            <tr>
-              <td>Calc AB Individual 2017</td>
-              <td><a class="chad" href="tests/benjamin_franklin.pdf" target="_blank">Download</a></td>
-            </tr>
-            <tr>
-              <td>Mu A Individual 2019</td>
-              <td><a class="chad" href="tests/Mu_A_Individual_2019_benjfrank.pdf" target="_blank">Download</a></td>
-            </tr>
-            <tr>
-              <td>Calc BC Individual 2018</td>
-              <td><a class="chad" href="tests/ben_frank_mu_b.pdf" target="_blank">Download</a></td>
-            </tr>
+          <tr>
+            <th class="chad">Subject Area</th>
+            <th class="chad">Typeset</th>
+            <th class="chad">Raws</th>
+          </tr>
+          <tr>
+            <td>Pre-Calculus Individual 2019</td>
+            <td><a class="chad" href="tests/typeset/BFS_PRCAL_IND_19.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/BFS_PRCAL_IND_19_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
+          <tr>
+            <td>Pre-Calculus Team 2019</td>
+            <td><a class="chad" href="tests/typeset/BFS_PRCAL_TEA_19.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/BFS_PRCAL_TEA_19_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
+          <tr>
+            <td>Mu A Individual 2017</td>
+            <td><a class="chad" href="tests/typeset/BFS_MUA_IND_17.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/BFS_MUA_IND_17_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
+          <tr>
+            <td>Mu A Individual 2019</td>
+            <td><a class="chad" href="tests/typeset/BFS_MUA_IND_19.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/BFS_MUA_IND_19_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
+          <tr>
+            <td>Mu B Individual 2018</td>
+            <td><a class="chad" href="tests/typeset/BFS_MUB_IND_18.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/BFS_MUB_IND_18_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
           </table>
 
           <br />
           <br />
 
-          <h5> <img src="images/catholic_high_logo.png" alt="Catholic High Logo" height="69"></h5>
+          <h5> <img src="images/catholic_high_logo.png" alt="Catholic High Logo" title="Catholic High" height="69"></h5>
         <table>
-            <tr>
-              <th>\(\mathbf{\text{Subject Area}}\)</th>
-              <th>\(\mathbf{\text{Test}}\)</th>
-            </tr>
-            <tr>
-              <td>Calc AB Individual 2018</td>
-              <td><a class="chad" href="tests/catholic_high.pdf" target="_blank">Download</a></td>
-            </tr>
-            <tr>
-              <td>Calc AB Individual 2019</td>
-              <td><a class="chad" href="tests/catholic_high_2019_a.pdf" target="_blank">Download</a></td>
-            </tr>
-            <tr>
-              <td>Calc BC Individual 2019</td>
-              <td><a class="chad" href="tests/catholic_high_2019_b.pdf" target="_blank">Download</a></td>
-            </tr>
+          <tr>
+            <th class="chad">Subject Area</th>
+            <th class="chad">Typeset</th>
+            <th class="chad">Raws</th>
+          </tr>
+          <tr>
+            <td>Calculus AB Individual 2018</td>
+            <td><a class="chad" href="tests/typeset/CHS_CALAB_IND_18.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/CHS_CALAB_IND_18_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
+          <tr>
+            <td>Calculus AB Individual 2019</td>
+            <td><a class="chad" href="tests/typeset/CHS_CALAB_IND_19.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/CHS_CALAB_IND_19_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
+          <tr>
+            <td>Calculus BC Individual 2019</td>
+            <td><a class="chad" href="tests/typeset/CHS_CALBC_IND_19.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/CHS_CALBC_IND_19_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
           </table>
 
           <br />
           <br />
 
-          <h5> <img src="images/haynes_academy_logo.png" alt="Haynes Academy" height="80"></h5>
+          <h5> <img src="images/haynes_academy_logo.png" alt="Haynes Academy" title="Haynes Academy" height="80"></h5>
         <table>
+          <tr>
+            <th class="chad">Subject Area</th>
+            <th class="chad">Tests</th>
+          </tr>
             <tr>
-              <th>\(\mathbf{\text{Subject Area}}\)</th>
-              <th>\(\mathbf{\text{Test}}\)</th>
+              <td>Calculus AB Individual 2019</td>
+              <td><a class="chad" href="tests/HAY_CALAB_IND_19.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc AB Individual 2019</td>
-              <td><a class="chad" href="tests/calc_ab.pdf" target="_blank">Download</a></td>
+              <td>Calculus BC Individual 2019</td>
+              <td><a class="chad" href="tests/HAY_CALBC_IND_19.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc BC Individual 2019</td>
-              <td><a class="chad" href="tests/calc_bc.pdf" target="_blank">Download</a></td>
+              <td>Calculus Team Test 2019</td>
+              <td><a class="chad" href="tests/HAY_MU_TEA_19.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc Team Test 2019</td>
-              <td><a class="chad" href="tests/calc_team_test.pdf" target="_blank">Download</a></td>
+              <td>Calculus Ciphering 2019</td>
+              <td><a class="chad" href="tests/HAY_CAL_CIPH_19.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc Ciphering 2019</td>
-              <td><a class="chad" href="tests/calc_ciphering.pdf" target="_blank">Download</a></td>
-            </tr>
-            <tr>
-              <td>Calc Math Bowl 2019</td>
-              <td><a class="chad" href="tests/calc_math_bowl.pdf" target="_blank">Download</a></td>
+              <td>Calculus Math Bowl 2019</td>
+              <td><a class="chad" href="tests/HAY_CAL_MAT_19.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Interschool 2019</td>
-              <td><a class="chad" href="tests/interschool.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/HAY_INT_19.pdf" target="_blank">Download</a></td>
             </tr>
           </table>
 
           <br />
           <br />
 
-          <h5> <img src="images/brother_martin_logo.png" alt="Brother Martin Logo" height="55"></h5>
+          <h5> <img src="images/brother_martin_logo.png" alt="Brother Martin Logo" title="Brother Martin" height="55"></h5>
         <table>
-            <tr>
-              <th>\(\mathbf{\text{Subject Area}}\)</th>
-              <th>\(\mathbf{\text{Test}}\)</th>
-            </tr>
-            <tr>
-              <td>Calc AB Individual 2018</td>
-              <td><a class="chad" href="tests/brother_martin.pdf" target="_blank">Download</a></td>
-            </tr>
-            <tr>
-              <td>Calc BC Individual 2019</td>
-              <td><a class="chad" href="tests/bromo2019.pdf" target="_blank">Download</a></td>
-            </tr>
+          <tr>
+            <th class="chad">Subject Area</th>
+            <th class="chad">Typeset</th>
+            <th class="chad">Raws</th>
+          </tr>
+          <tr>
+            <td>Calculus AB Individual 2018</td>
+            <td><a class="chad" href="tests/typeset/BMS_CALAB_IND_18.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/BMS_CALAB_IND_18_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
+          <tr>
+            <td>Calculus BC Individual 2019</td>
+            <td><a class="chad" href="tests/typeset/BMS_CALBC_IND_19.pdf" target="_blank">Download</a></td>
+            <td><a class="chad" href="tests/raw/BMS_CALBC_IND_19_RAW.pdf" target="_blank">Download</a></td>
+          </tr>
           </table>
 
           <br />
           <br />
 
-          <h5>  <img src="images/louisiana_state_logo.png" alt="State Convention Logo" height="60"></h5>
+          <h5>  <img src="images/louisiana_state_logo.png" alt="State Convention Logo" title="State Convention" height="60"></h5>
         <table>
             <tr>
-              <th>\(\mathbf{\text{Subject Area}}\)</th>
-              <th>\(\mathbf{\text{Test}}\)</th>
+              <th class="chad">Subject Area</th>
+              <th class="chad">Typeset</th>
+              <th class="chad">Raws</th>
             </tr>
             <tr>
-              <td>Calc AB Individual 2018</td>
-              <td><a class="chad" href="tests/state_convention.pdf" target="_blank">Download</a></td>
+              <td>Mu A Individual 2018</td>
+              <td><a class="chad" href="tests/typeset/LAS_MUA_IND_18.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/LAS_MUA_IND_18_RAW.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc AB Individual 2017</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2017/2017%20Mu%20A%20Individual.pdf" target="_blank">Download</a></td>
+              <td>Mu A Individual 2017</td>
+              <td colspan="2"><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2017/2017%20Mu%20A%20Individual.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc BC Individual 2017</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2017/2017%20Mu%20B%20Individual.pdf" target="_blank">Download</a></td>
+              <td>Mu B Individual 2017</td>
+              <td colspan="2"><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2017/2017%20Mu%20B%20Individual.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc AB Individual 2012</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2012/2012%20Mu%20A%20Individual.pdf" target="_blank">Download</a></td>
+              <td>Mu A Individual 2012</td>
+              <td colspan="2"><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2012/2012%20Mu%20A%20Individual.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc BC Individual 2012</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2012/2012%20Mu%20B%20Individual.pdf" target="_blank">Download</a> \(\small{\text{(Missing Solutions)}}\)</td>
+              <td>Mu B Individual 2012</td>
+              <td><a class="chad" href="tests/typeset/LAS_MUB_IND_12.pdf" target="_blank">Download</a><sup>&dagger;</sup></td>
+              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2012/2012%20Mu%20B%20Individual.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc AB Individual 2010</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20A%20Individual.pdf" target="_blank">Download</a></td>
+              <td>Mu A Individual 2010</td>
+              <td colspan="2"><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20A%20Individual.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
-              <td>Calc BC Individual 2010</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20B%20Individual.pdf" target="_blank">Download</a></td>
+              <td>Mu B Individual 2010</td>
+              <td colspan="2"><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20B%20Individual.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Mu B Area Test 2010</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20B%20Topic.pdf" target="_blank">Download</a></td>
+              <td colspan="2"><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20B%20Topic.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Integration Area Test 2010</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20Topic%20Integration.pdf" target="_blank">Download</a> \(\small{\text{(Missing Solutions)}}\)</td>
+              <td><a class="chad" href="tests/typeset/LAS_INTEG_ARE_10.pdf" target="_blank">Download</a><sup>&dagger;</sup></td>
+              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20Topic%20Integration.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Differentiation Area Test 2010</td>
-              <td><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20Topic%20Differentiation.pdf" target="_blank">Download</a></td>
+              <td colspan="2"><a class="chad" href="http://www.lamao.org/Content/Public/Tests/2010/2010%20Mu%20Topic%20Differentiation.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Scholarship Test 2019</td>
-              <td><a class="chad" href="tests/scholarshiptest2019.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/typeset/LAS_SCHLR_19.pdf" target="_blank">Download</a></td>
+              <td><a class="chad" href="tests/raw/LAS_SCHLR_19_RAW.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Scholarship Test 2017</td>
-              <td><a class="chad" href="tests/scholarshiptest2017.pdf" target="_blank">Download</a></td>
+              <td colspan="2"><a class="chad" href="tests/scholarshiptest2017.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Scholarship Test 2012</td>
-              <td><a class="chad" href="tests/scholarshiptest2012.pdf" target="_blank">Download</a></td>
+              <td colspan="2"><a class="chad" href="tests/scholarshiptest2012.pdf" target="_blank">Download</a></td>
             </tr>
             <tr>
               <td>Scholarship Test 2010</td>
-              <td><a class="chad" href="tests/scholarshiptest2010.pdf" target="_blank">Download</a></td>
+              <td colspan="2"><a class="chad" href="tests/scholarshiptest2010.pdf" target="_blank">Download</a></td>
             </tr>
           </table>
 
           <br />
           <br />
 
-          <h5>  <img src="images/kha_mock_test.png" alt="Kha Academy Logo" width="298" height="45"></h5>
+          <h5>  <img src="images/kha_mock_test.png" alt="Kha Academy Logo" title="Kha's Mock Tests" width="298" height="45"></h5>
           <table>
-              <tr>
-                <th>\(\mathbf{\text{Subject Area}}\)</th>
-                <th>\(\mathbf{\text{Test}}\)</th>
-              </tr>
+            <tr>
+              <th class="chad">Subject Area</th>
+              <th class="chad">Tests</th>
+            </tr>
               <tr>
                 <td>Calculus AB Ciphering</td>
-                <td><a class="chad" href="tests/mock1.pdf" target="_blank">Download</a></td>
+                <td><a class="chad" href="tests/Kha_s_Mock_Ciphering_AB.pdf" target="_blank">Download</a></td>
               </tr>
               <tr>
                 <td>Calculus BC Ciphering</td>
-                <td><a class="chad" href="tests/mock2.pdf" target="_blank">Download</a></td>
+                <td><a class="chad" href="tests/Kha_s_Mock_Ciphering_BC.pdf" target="_blank">Download</a></td>
               </tr>
               <tr>
                 <td>Calculus AB Ciphering Set II</td>
-                <td><a class="chad" href="tests/mock3.pdf" target="_blank">Download</a></td>
+                <td><a class="chad" href="tests/Kha_s_Mock_Ciphering_AB_Set_II.pdf" target="_blank">Download</a></td>
               </tr>
             </table>
             <br />
-            <br />
+            <hr/>
+            <p>&dagger;&nbsp; denotes missing solutions.</p>
+
     </div>
   </div>
 
 <!-- Second Grid -->
 <div class="w3-container w3-black w3-center w3-opacity sweepPadding">
-    <h1 class="w3-margin w3-xlarge"><em> What do Haynes and a broom have in common? They both <b>sweep</b>!</em></h1>
+  <h1 class="w3-margin w3-xlarge"><em> What do Haynes and a broom have in common? They both <b>sweep</b>!</em></h1>
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-center w3-opacity">  
- <p>Kha Le | Contact: <a href="mailto:khale282819@gmail.com?Subject=Sweep%20Sweep" target="_top">khale282819@gmail.com</a></p>
+<footer class="w3-container w3-padding-32 w3-center">
+  <p>Kha Le | Contact: <a href="mailto:khale282819@gmail.com?Subject=Sweep%20Sweep" target="_top">khale282819@gmail.com</a></p>
 </footer>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {

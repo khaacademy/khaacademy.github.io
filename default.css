@@ -12,6 +12,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
 }
 
 td, th {
@@ -21,7 +22,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #7d191925;
+  background-color: #7d191915;
 }
 
 .omegachad {
