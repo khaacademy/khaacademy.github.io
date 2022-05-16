@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0708d3de.css",
-    "main.js": "/static/js/main.222aca96.js",
+    "main.js": "/static/js/main.d1e961ca.js",
     "static/js/787.372c8646.chunk.js": "/static/js/787.372c8646.chunk.js",
     "static/media/LAS_SCHLR_19_RAW.pdf": "/static/media/LAS_SCHLR_19_RAW.ab5807a49f9222eb9a60.pdf",
     "static/media/BFS_PRCAL_IND_19_RAW.pdf": "/static/media/BFS_PRCAL_IND_19_RAW.6774e0290041c1bd4da2.pdf",
@@ -95,11 +95,11 @@
     "static/media/kha_mock_test.png": "/static/media/kha_mock_test.1d8ba83a8e155515cafb.png",
     "index.html": "/index.html",
     "main.0708d3de.css.map": "/static/css/main.0708d3de.css.map",
-    "main.222aca96.js.map": "/static/js/main.222aca96.js.map",
+    "main.d1e961ca.js.map": "/static/js/main.d1e961ca.js.map",
     "787.372c8646.chunk.js.map": "/static/js/787.372c8646.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0708d3de.css",
-    "static/js/main.222aca96.js"
+    "static/js/main.d1e961ca.js"
   ]
 }
